@@ -1,4 +1,4 @@
-# desenvolva um programa que leia n números inteiros e mostre a soma apenas dos pares. Desconsidere os impares
+# desenvolva um programa que leia k números inteiros e mostre a soma apenas dos pares. Desconsidere os impares
 s = 0
 k = int(input('até qual número você quer ir?'))
 for a in range(0,k):
