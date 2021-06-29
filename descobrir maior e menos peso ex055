@@ -5,3 +5,5 @@ for b in range(a):
     c = float(input('qual é o peso da pessoa em quilos?'))
     list.append(c)
 print(f' o menor peso é de {min(list)} kg e o maior peso é de {max(list)} kg')
+# como eu faria caso eu quisesse que ele perguntasse o nome de cada pessoa, seu peso e em seguida montasse
+# um esquema em ordem decrescente de peso (ou em ordem alfabética)?
