@@ -11,8 +11,8 @@ while a !=2:
         n = int(input('Digite o número do fatorial'))
         if n < 0:
             print('Não existe fatorial menor que 0')
-        elif n == 1:
-            print('O fatorial de 1 é 1')
+        elif n == 0:
+            print('O fatorial de 0 é 1')
         else:
             c = f(n)
             print(f'O valor do fatorial em questão é {c}')
