@@ -4,4 +4,4 @@ from random import randint
 tupla = (randint(0, 100), randint(0, 100), randint(0, 100), randint(0, 100), randint(0, 100),)
 for i in tupla:
     print(i, end=' ')
-print(f'O maior valor é {max(tupla)} e o menor valor é {min(tupla)}')
+print(f'\nO maior valor é {max(tupla)} e o menor valor é {min(tupla)}')
