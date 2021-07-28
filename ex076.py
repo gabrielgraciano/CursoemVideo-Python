@@ -7,4 +7,4 @@ for n in range(0, len(tupla)):
     if n % 2 == 0:
         print(f'{tupla[n]:.<30}', end=' ')
     else:
-        print(f'R${tupla[n]:.2f}')
+        print(f'R${tupla[n]:>6.2f}')
