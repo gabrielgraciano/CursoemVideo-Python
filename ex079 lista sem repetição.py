@@ -15,6 +15,8 @@ while True:
     if resp == 'N':
         break
 
+lst.sort()
 print(lst)
 
 # '''por que eu não posso colocar resp = ''? dá erro'''
+# por que se eu colocasse print(lst.sort()) daria erro 'None'?
