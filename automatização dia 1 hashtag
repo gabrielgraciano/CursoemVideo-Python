@@ -1,0 +1,96 @@
+automatização de tarefas em Pytohn
+utliza-se pyautogui e pyperclip (permite o uso de caracteres especiais)
+
+    primeira coisa a se fazer antes de começar o programa é entender a lógica de programação
+    (como você resolveria na mão esse problema? o resultado, passo-a-passo, é o programa)<--- primeiro passo
+
+# passo 1: entrar no nosso sistema
+# passo 2: navegar no sistema (pasta exportar)
+# passo 3: baixar o arquivo
+# passo 4: calcular faturamento e qtd de produtos vendidos
+# passo 5: enviar e-mail para a diretoria
+
+Passo 1: abrir uma aba ( ctrlt por exemplo)
+
+pyautogui.PAUSE = 1 #indica para o pyatuogui esperar 1 segundo antes de cada novo comando
+link = 'link'
+pyperclip.copy(link) #permite voce copiar um link do seu código
+pyautogui.hotkey('ctrl', 'v')
+pyautogui.hotkey('ctrl', 't') #ele executa o q escrito, no caso, abre uma janela
+pyautogui.write('link')
+pyautogui.press('enter')
+
+#passo 2
+time.sleep(5) #dar tempo de carregar a página
+pyautogui.position() # seja k a posição x e j a posição y
+pyautogui.click(x=k, y=j, clicks=2)
+
+#passo3
+time.sleep(3)
+#descobrir as posições
+pyautogui.click(x=k, y=j)
+pyautogui.click(x=k, y=j)
+pyautogui.click(x=k, y=j)
+time.sleep(3) # espera fazer o download
+
+#passo 4
+
+# como importar uma tabela para o python?
+import pandas as pd
+import openpyxl
+
+tabela = pd.read_excel(r'local\Vendas - Dez.slsx') #deve-se colocar o local do arquivo também para o Python saber onde é
+# botão direito, propriedades, local
+o r antes do início cancela qualquer comando que a contrabarra possa significar
+faturamento = tabela['Valor Final'].sum()
+quantidade = tabela['Quantidade'].sum()
+display(tabela) #como se fosse um print
+
+
+#passo 5
+entrar no gmail
+
+link = linkemail
+
+pyautogui.PAUSE = 1 #indica para o pyatuogui esperar 1 segundo antes de cada novo comando
+pyperclip.copy(link) #permite voce copiar um link do seu código
+
+pyautogui.hotkey('ctrl', 'v')
+
+pyautogui.hotkey('ctrl', 't') #ele executa o q escrito, no caso, abre uma janela
+
+pyautogui.press('enter')
+
+#escrever o email
+pyautogui.click(x=k , y=j)
+
+#clicar no botão escrever
+
+
+#escrever o destinatário
+pyautogui.write('pythonimpressionador+diretoria@gmail.com')
+pyautogui.press('tab') #escolher email
+pyautogui.press('tab') #passar pro campo de assunto
+
+#escrever o assunto
+pyautogui.write('relatório de vendas')
+pyautogui.press('tab')
+
+#escrever o corpo do email
+
+texto - '''
+Prezados. bom dia...
+
+
+'''
+
+
+#enviar o email
+
+
+
+pyautogui.click
+pyautogui.write
+pyautogui.press('win')
+    press x hotkey ==> press é uma tecla só e hotkey são várias
+pyautogui.position() # mostra a posição do mouse em coordenadas cartesianas
